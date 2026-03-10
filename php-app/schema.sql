@@ -5,11 +5,11 @@
 --   mysql -u root -p < schema.sql
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS travel_splitter
+CREATE DATABASE IF NOT EXISTS tai_etu_bixente_boucon
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-USE travel_splitter;
+USE tai_etu_bixente_boucon;
 
 -- ============================================================
 -- 1. UTILISATEURS

@@ -13,7 +13,7 @@ define('DB_PASS', 'R8LNZNUKVX');          // A adapter
 define('DB_CHARSET', 'utf8mb4');
 
 // ---- Debug (mettre false en production) ----
-define('DEBUG', true);
+define('DEBUG', FALSE);
 if (defined('DEBUG') && DEBUG) {
 	ini_set('display_errors', '1');
 	ini_set('display_startup_errors', '1');
