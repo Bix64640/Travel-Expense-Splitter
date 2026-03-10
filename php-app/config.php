@@ -12,6 +12,14 @@ define('DB_USER', 'tai_etu_bixente_boucon');
 define('DB_PASS', 'R8LNZNUKVX');          // A adapter
 define('DB_CHARSET', 'utf8mb4');
 
+// ---- Debug (mettre false en production) ----
+define('DEBUG', true);
+if (defined('DEBUG') && DEBUG) {
+	ini_set('display_errors', '1');
+	ini_set('display_startup_errors', '1');
+	error_reporting(E_ALL);
+}
+
 // ---- Application ----
 define('APP_NAME', 'Travel Expense Splitter');
 define('APP_URL',  'http://localhost/php-app'); // Sans slash final
