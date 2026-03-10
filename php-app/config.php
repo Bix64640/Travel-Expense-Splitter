@@ -7,7 +7,7 @@
 
 // ---- Base de donnees ----
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'travel_splitter');
+define('DB_NAME', 'tai_etu_bixente_boucon'); // A adapter
 define('DB_USER', 'tai_etu_bixente_boucon');
 define('DB_PASS', 'R8LNZNUKVX');          // A adapter
 define('DB_CHARSET', 'utf8mb4');
