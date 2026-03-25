@@ -7,9 +7,9 @@
 
 // ---- Base de donnees ----
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'tai_etu_bixente_boucon'); // A adapter
-define('DB_USER', 'tai_etu_bixente_boucon');
-define('DB_PASS', 'R8LNZNUKVX');          // A adapter
+define('DB_NAME', 'tai_etu_bixente_boucon_v2'); // A adapter
+define('DB_USER', 'tai_etu_bixente_boucon_v2');
+define('DB_PASS', 'R8LNZNUKVX_v2');          // A adapter
 define('DB_CHARSET', 'utf8mb4');
 
 // ---- Debug (mettre false en production) ----

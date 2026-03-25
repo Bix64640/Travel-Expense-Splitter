@@ -5,11 +5,11 @@
 --   mysql -u root -p < schema.sql
 -- ============================================================
 
-CREATE DATABASE IF NOT EXISTS tai_etu_bixente_boucon
+CREATE DATABASE IF NOT EXISTS tai_etu_bixente_boucon_v2
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
-USE tai_etu_bixente_boucon;
+USE tai_etu_bixente_boucon_v2;
 
 -- ============================================================
 -- 1. UTILISATEURS
