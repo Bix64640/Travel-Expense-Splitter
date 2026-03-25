@@ -60,6 +60,7 @@ $users_list = $pdo->query(
     <div class="btn-group">
         <a href="admin_categories.php" class="btn btn-secondary btn-sm">Categories</a>
         <a href="admin_groups.php" class="btn btn-secondary btn-sm">Groupes</a>
+        <a href="admin_settings.php" class="btn btn-secondary btn-sm">Theme</a>
     </div>
 </div>
 
