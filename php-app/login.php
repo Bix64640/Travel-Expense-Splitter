@@ -86,6 +86,23 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </div>
             <?php endif; ?>
 
+            <?php if (defined('SAMPLE_USERS_VISIBLE') && SAMPLE_USERS_VISIBLE): ?>
+                <div class="card" style="margin-top:1rem; border:1px dashed var(--color-border);">
+                    <div class="card-header">
+                        <strong>Comptes de test (utilisateurs)</strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-sm">Utilisateur 1 — Email : <strong><?= h(SAMPLE_USER_1_EMAIL) ?></strong> </p> 
+                        <p class="text-sm"> Mot de passe : <strong> <?= h(SAMPLE_USER_1_PASS) ?></strong></p>
+                        <p class="text-sm">Utilisateur 2 — Email : <strong><?= h(SAMPLE_USER_2_EMAIL) ?></strong>
+                        <p class="text-sm"> Mot de passe : <strong><?= h(SAMPLE_USER_2_PASS) ?></strong></p>
+                        <p class="text-sm">Utilisateur 3 — Email : <strong><?= h(SAMPLE_USER_3_EMAIL) ?></strong> 
+                        <p class="text-sm"> Mot de passe : <strong><?= h(SAMPLE_USER_3_PASS) ?></strong></p>
+                        <p class="text-sm text-muted">Ces emplacements sont des exemples — modifiez les valeurs dans <code>php-app/config.php</code>.</p>
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <p class="text-center mt-2 text-sm text-muted">
                 Pas encore de compte ? <a href="signup.php">S'inscrire</a>
             </p>
