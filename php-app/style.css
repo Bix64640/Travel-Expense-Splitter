@@ -74,6 +74,19 @@ a:hover { color: var(--color-primary-dk); text-decoration: underline; }
 .navbar-nav a:hover { color: var(--color-primary); text-decoration: none; }
 .navbar-nav .active { color: var(--color-primary); border-bottom: 2px solid var(--color-primary); }
 
+/* Header signup button: remove green background so text is clearly visible */
+.navbar a.btn.btn-primary {
+    background: transparent !important;
+    color: var(--color-primary) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+.navbar a.btn.btn-primary::before,
+.navbar a.btn.btn-primary::after {
+    display: none !important;
+    content: none !important;
+}
+
 .badge {
     display: inline-flex;
     align-items: center;
