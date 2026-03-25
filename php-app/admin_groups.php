@@ -122,6 +122,8 @@ $groups_list = $pdo->query(
                                     <a href="group_view.php?id=<?= $g['id'] ?>" class="btn btn-secondary btn-sm">Voir</a>
                                     <a href="groups.php?action=edit&id=<?= $g['id'] ?>" class="btn btn-secondary btn-sm">Modifier</a>
                                     <a href="admin_groups.php?action=delete&id=<?= $g['id'] ?>" class="btn btn-danger btn-sm">Supprimer</a>
+                                    <a href="admin_export_group.php?id=<?= $g['id'] ?>&amp;format=csv" class="btn btn-secondary btn-sm">Export CSV</a>
+                                    <a href="admin_export_group.php?id=<?= $g['id'] ?>&amp;format=txt" class="btn btn-secondary btn-sm">Export TXT</a>
                                 </div>
                             </td>
                         </tr>

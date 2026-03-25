@@ -20,6 +20,13 @@ if (defined('DEBUG') && DEBUG) {
 	error_reporting(E_ALL);
 }
 
+// ---- Identifiants admin (a utiliser seulement en dev) ----
+// Ces valeurs servent a afficher une rubrique sur la page de connexion
+// pour faciliter les tests. CHANGEZ/ENLEVEZ ces valeurs en production.
+define('ADMIN_EMAIL', 'admin@example.com');
+define('ADMIN_PASS',  'admin123');
+define('ADMIN_CREDENTIALS_VISIBLE', true); // true => affiche la rubrique sur login.php
+
 // ---- Application ----
 define('APP_NAME', 'Travel Expense Splitter');
 define('APP_URL',  'http://localhost/php-app'); // Sans slash final

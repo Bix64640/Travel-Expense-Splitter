@@ -73,6 +73,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <button type="submit" class="btn btn-primary" style="width:100%">Se connecter</button>
             </form>
 
+            <?php if (defined('ADMIN_CREDENTIALS_VISIBLE') && ADMIN_CREDENTIALS_VISIBLE): ?>
+                <div class="card" style="margin-top:1rem; border:1px dashed var(--color-border);">
+                    <div class="card-header">
+                        <strong>Identifiants administrateur (test)</strong>
+                    </div>
+                    <div class="card-body">
+                        <p class="text-sm">Email : <strong><?= h(ADMIN_EMAIL) ?></strong></p>
+                        <p class="text-sm">Mot de passe : <strong><?= h(ADMIN_PASS) ?></strong></p>
+                        <p class="text-sm text-muted">Supprimez ou désactivez cette rubrique en production.</p>
+                    </div>
+                </div>
+            <?php endif; ?>
+
             <p class="text-center mt-2 text-sm text-muted">
                 Pas encore de compte ? <a href="signup.php">S'inscrire</a>
             </p>
