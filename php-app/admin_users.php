@@ -9,6 +9,9 @@ $page_title = 'Admin - Utilisateurs';
 require_once __DIR__ . '/header.php';
 require_role('admin');
 
+// Identifiant de l'utilisateur connecte (utilise pour empêcher modification de soi-meme)
+$uid = isset($user['id']) ? (int)$user['id'] : 0;
+
 // ---- ACTIONS POST ----
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $target_id = (int)($_POST['user_id'] ?? 0);
