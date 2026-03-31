@@ -14,7 +14,7 @@ define('DB_CHARSET', 'utf8mb4');
 
 // ---- Debug (mettre false en production) ----
 // Mode DEBUG temporairement active pour diagnostic. Remettez a FALSE ensuite.
-define('DEBUG', false);
+define('DEBUG', true);
 if (defined('DEBUG') && DEBUG) {
 	ini_set('display_errors', '1');
 	ini_set('display_startup_errors', '1');
